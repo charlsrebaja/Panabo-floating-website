@@ -432,6 +432,60 @@ p {
 }
 
 /* ========================================
+   Expenses Section
+   ======================================== */
+
+.expenses {
+  padding: 100px 20px;
+  background-color: var(--white);
+}
+
+.expenses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.expense-card {
+  background-color: var(--off-white);
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--accent-gold);
+}
+
+.expense-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.expense-icon {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.expense-card h3 {
+  color: var(--primary-ocean);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.expense-price {
+  color: var(--accent-gold);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.expense-detail {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ========================================
    Location Section
    ======================================== */
 
