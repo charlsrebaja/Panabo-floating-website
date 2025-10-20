@@ -158,7 +158,7 @@ p {
 .hero {
   min-height: 100vh;
   height: 100vh;
-  background-image: url("../images/hero-floatingbg1.png");
+  background-image: url("/Panabo-floating-website/images/hero-floatingbg1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
