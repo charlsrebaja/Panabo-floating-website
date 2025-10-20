@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Beach Panabo City</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1>🏝️ Floating Beach</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#activities" class="nav-link">Activities</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2 class="hero-title fade-in">
+          Discover the Floating Beach of Panabo City
+        </h2>
+        <p class="hero-subtitle fade-in">
+          Experience the magic of crystal-clear waters and pristine sandy shores
+        </p>
+        <button class="cta-button fade-in" onclick="scrollToSection('contact')">
+          Plan Your Visit
+        </button>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title fade-in-on-scroll">About Floating Beach</h2>
+        <div class="about-content">
+          <div class="about-text fade-in-on-scroll">
+            <p>
+              <strong>Floating Cottage</strong> located near Pantalan, Panabo
+              City Davao del Norte, is the most popular suggested place for
+              every occasion and events, especially birthday parties. This
+              peaceful and windy place features comfortable cottages and
+              beautiful white sand beaches, along with a mini store for your
+              convenience.
+            </p>
+            <p>
+              Not all of the
+              <a
+                href="https://www.youtube.com/watch?v=NNp8SiJ95Ms"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="about-link"
+                >floating cottages</a
+              >
+              are available for rent. Many of them are also used as fish pond
+              areas, creating a unique blend of tourism and local aquaculture.
+              This makes Floating Beach a distinctive destination that combines
+              hospitality with traditional livelihoods.
+            </p>
+            <p>
+              Whether you're planning a special celebration, looking for a
+              peaceful getaway, or simply want to experience the charm of
+              Panabo's coastal beauty, Floating Beach offers the perfect setting
+              for unforgettable memories.
+            </p>
+          </div>
+          <div class="about-image fade-in-on-scroll">
+            <div class="image-placeholder">
+              <img
+                src="images/hero-floatingbg.png"
+                alt="Floating Beach"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title fade-in-on-scroll">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400&fit=crop"
+              alt="Philippines Beach Scene 1"
+              loading="lazy"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="gallery-item fade-in-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=400&fit=crop"
+              alt="Philippines Beach Scene 2"
+              loading="lazy"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="gallery-item fade-in-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1500375592092-40eb7b5e6f60?w=400&h=400&fit=crop"
+              alt="Philippines Tropical Beach 1"
+              loading="lazy"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="gallery-item fade-in-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1495954484750-af469f1357be?w=400&h=400&fit=crop"
+              alt="Philippines Sunset Beach"
+              loading="lazy"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="gallery-item fade-in-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=400&fit=crop"
+              alt="Philippines Island View"
+              loading="lazy"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="gallery-item fade-in-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+              alt="Philippines Coastal Beauty"
+              loading="lazy"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+      <img class="lightbox-image" src="" alt="" />
+    </div>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+      <div class="container">
+        <h2 class="section-title fade-in-on-scroll">Activities</h2>
+        <div class="activities-grid">
+          <div class="activity-card fade-in-on-scroll">
+            <div class="activity-icon">🏊</div>
+            <h3>Swimming</h3>
+            <p>
+              Dive into crystal-clear waters perfect for swimming and
+              snorkeling.
+            </p>
+          </div>
+          <div class="activity-card fade-in-on-scroll">
+            <div class="activity-icon">🏡</div>
+            <h3>Floating Cottages</h3>
+            <p>Stay in unique floating cottages with stunning ocean views.</p>
+          </div>
+          <div class="activity-card fade-in-on-scroll">
+            <div class="activity-icon">🛶</div>
+            <h3>Kayaking</h3>
+            <p>Explore the coastline and hidden coves by kayak.</p>
+          </div>
+          <div class="activity-card fade-in-on-scroll">
+            <div class="activity-icon">🍽️</div>
+            <h3>Food Stalls</h3>
+            <p>Enjoy fresh seafood and local delicacies at beachside stalls.</p>
+          </div>
+          <div class="activity-card fade-in-on-scroll">
+            <div class="activity-icon">🌅</div>
+            <h3>Sunset Viewing</h3>
+            <p>Witness breathtaking tropical sunsets over the horizon.</p>
+          </div>
+          <div class="activity-card fade-in-on-scroll">
+            <div class="activity-icon">📸</div>
+            <h3>Photography</h3>
+            <p>Capture Instagram-worthy moments at paradise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+      <div class="container">
+        <h2 class="section-title fade-in-on-scroll">Location & Directions</h2>
+        <div class="location-content">
+          <div class="map-container fade-in-on-scroll">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.0808029697746!2d125.70153120164949!3d7.287395152190391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f945c1e3ba1801%3A0x936ad33524267dc!2sPANABO%20FLOATING%20COTTAGE!5e0!3m2!1sen!2sph!4v1760937175942!5m2!1sen!2sph"
+              title="Google Map of Panabo Floating Cottage"
+              class="map-iframe"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="location-info fade-in-on-scroll">
+            <h3>How to Get There</h3>
+            <p>
+              <strong>Address:</strong> Floating Beach, Panabo City, Davao del
+              Norte, Philippines
+            </p>
+            <p>
+              <strong>Distance from Davao City:</strong> Approximately 40-50 km
+              (45 minutes to 1 hour drive)
+            </p>
+            <h4>Directions:</h4>
+            <ol>
+              <li>
+                From Davao City, head towards Panabo via the Davao-Cotabato Road
+              </li>
+              <li>Follow signs towards the coastal areas</li>
+              <li>Head to the barangay coastal road</li>
+              <li>Look for signage to Floating Beach</li>
+              <li>Enjoy parking facilities and welcome areas</li>
+            </ol>
+            <p>
+              <strong>Best Time to Visit:</strong> Year-round, but November to
+              May offers the best weather.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Footer Logo Section -->
+          <div class="footer-section footer-logo-section">
+            <div class="footer-logo">
+              <h3>🏝️ Floating Beach</h3>
+              <p>Your tropical paradise awaits</p>
+            </div>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="footer-section footer-links-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#activities">Activities</a></li>
+              <li><a href="#location">Location</a></li>
+            </ul>
+          </div>
+
+          <!-- Activities Section -->
+          <div class="footer-section footer-activities-section">
+            <h4>Popular Activities</h4>
+            <ul class="footer-links">
+              <li><a href="#activities">Swimming & Snorkeling</a></li>
+              <li><a href="#activities">Floating Cottages</a></li>
+              <li><a href="#activities">Kayaking</a></li>
+              <li><a href="#activities">Photography</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Links Section -->
+          <div class="footer-section footer-social-section">
+            <h4>Follow Us</h4>
+            <div class="footer-social-links">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook"
+                >f</a
+              >
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+                >📷</a
+              >
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Twitter"
+                >𝕏</a
+              >
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="YouTube"
+                >▶️</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Floating Beach Panabo City. All rights reserved.</p>
+          <p>
+            Crafted with <span class="heart">❤️</span> for the beauty of
+            Panabo's coastal paradise.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
